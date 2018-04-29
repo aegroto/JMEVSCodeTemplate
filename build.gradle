@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = '1.7'
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+def jmerepo='com.github.jmonkeyengine.jMonkeyEngine'
+def jmeversion='v3.2.0-stable'
+
+mainClassName = 'mygame.Main'
+
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {    
+    compile jmerepo + ':jme3-core:' + jmeversion
+    compile jmerepo + ':jme3-desktop:' + jmeversion
+    compile jmerepo + ':jme3-lwjgl:' + jmeversion
+    compile jmerepo + ':jme3-android:' + jmeversion
+    compile jmerepo + ':jme3-terrain:' + jmeversion
+    
+    testCompile group: 'junit', name: 'junit', version: '4.10'
+}
