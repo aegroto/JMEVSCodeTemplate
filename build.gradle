@@ -14,6 +14,20 @@ repositories {
     maven { url "https://jitpack.io" }
 }
 
+project(":assets") {
+    apply plugin: "java"
+    
+    buildDir = rootProject.file("build/assets")
+    
+    sourceSets {
+        main {
+            resources {
+                srcDir '.'
+            }
+        }
+    }    
+}
+
 dependencies {    
     compile jmerepo + ':jme3-core:' + jmeversion
     compile jmerepo + ':jme3-desktop:' + jmeversion
@@ -22,4 +36,5 @@ dependencies {
     compile jmerepo + ':jme3-terrain:' + jmeversion
     
     testCompile group: 'junit', name: 'junit', version: '4.10'
+    runtime project(':assets')
 }
