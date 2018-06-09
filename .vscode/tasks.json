@@ -1,0 +1,51 @@
+{
+    "version" : "2.0.0",
+    "tasks": [
+        {
+            "label": "gradle run",
+            "type": "shell",
+            "command": "./gradlew",
+            "windows": {
+                "command": "gradlew.bat"
+            },
+            "args": [
+                "run"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "gradle clean",
+            "type": "shell",
+            "command": "./gradlew",
+            "windows": {
+                "command": "gradlew.bat"
+            },
+            "args": [
+                "clean"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "gradle clean and run",
+            "type": "shell",
+            "command": "./gradlew",
+            "windows": {
+                "command": "gradlew.bat"
+            },
+            "args": [
+                "clean"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        }
+    ]
+}
