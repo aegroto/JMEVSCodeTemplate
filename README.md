@@ -2,6 +2,7 @@
 
 This repository contains a boilerplate for jMonkeyEngine projects to be used as a workspace in Visual Studio Code.
 Main features:
+
     - Gradle build file
     - Dedicated assets folder
     - Automated tasks for build
@@ -17,6 +18,7 @@ Every asset should be placed inside the "assets" folder. It is configured as a s
 ## Tasks
 
 The boilerplate contains some tasks to automate the most common gradle operations during development on jME:
+
     - gradle build
     - gradle clean
     - gradle run
@@ -24,7 +26,7 @@ The boilerplate contains some tasks to automate the most common gradle operation
 
 ## Support
 
-If you need any support about this boilerplate, open an issue or send a mail at aegroto@protonmail.com
+If you need any support about this boilerplate open an issue or send a mail at aegroto@protonmail.com
 
 ## License
 
