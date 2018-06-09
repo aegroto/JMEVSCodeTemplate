@@ -46,6 +46,22 @@
                 "reveal": "always",
                 "panel": "shared"
             }
+        },
+        {
+            "label": "gradle build",
+            "type": "shell",
+            "command": "./gradlew",
+            "windows": {
+                "command": "gradlew.bat"
+            },
+            "args": [
+                "build"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
         }
     ]
 }
