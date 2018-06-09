@@ -21,3 +21,11 @@ The boilerplate contains some tasks to automate the most common gradle operation
     - gradle clean
     - gradle run
     - gradle clean and run
+
+## Support
+
+If you need any support about this boilerplate, open an issue or send a mail at aegroto@protonmail.com
+
+## License
+
+Every content in this repository is released under GPLv3:https://www.gnu.org/licenses/gpl-3.0.en.html
